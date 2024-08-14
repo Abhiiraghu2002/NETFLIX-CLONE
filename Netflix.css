@@ -1,0 +1,520 @@
+Index.html
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#Main {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("./MainBg.jpg");
+
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+}
+
+nav img {
+  width: 10rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+ul li select {
+  height: 1.7rem;
+  width: 7rem;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+nav ul li select option {
+  color: black;
+}
+
+nav ul li button {
+  border: none;
+  outline: none;
+  background-color: #e50914;
+  color: white;
+  height: 1.8rem;
+  width: 4.4rem;
+
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  transform: translate(-50%, -50%);
+}
+
+#header-content h1 {
+  font-size: 2.6rem;
+  font-weight: 600px;
+  max-width: 800px;
+}
+
+#header-content p {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+#header-content form {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#header-content input {
+  color: white;
+  padding: 10px 20px;
+width: 50%;
+  border: 1px solid gray;
+  background: transparent;
+}
+
+#header-content input::placeholder {
+  color: lightgray;
+}
+
+#header-content form button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header-content form button img {
+  width: 0.8rem;
+  margin-left: 7px;
+
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 568px) {
+  * {
+    font-size: 11px;
+  }
+
+  #header-content p {
+    font-size: 1.3rem;
+   
+  }
+
+  #header-content form {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  #header-content form input {
+   width: 70%;
+  }
+
+  ul li select {
+    height: 1.9rem;
+    width: 8rem;
+    font-size: 1rem;
+  }
+  
+}
+.firstpage{
+    
+    width: 100vw;
+    height:600px;
+    background-color:black;
+}
+.firstpage h1{
+    position: absolute;
+    font-size: 3.2rem;
+    margin-left: 12rem;
+    top: 53rem;
+}
+.firstpage p{
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 12rem;
+    top: 58rem;
+
+}
+.firstpage img{
+    position: relative;
+    margin-left: 50rem;
+}
+.firstpage video{
+    position: absolute;
+    right: 10rem;
+    top: 54.5rem;
+}
+hr{
+    width: 100vw;
+    height: 8px;
+    background-color: rgb(55, 53, 53);
+    border: none;
+}
+.secondpage{
+    
+    width: 100vw;
+    height:600px;
+    background-color:black;
+}
+.secondpage h2{
+    position: absolute;
+    width: 600px;
+    font-size: 3rem;
+    margin-left: 45rem;
+    margin-top: 12rem;
+    color: white;
+
+}
+.secondpage img{
+    width: 600px;
+    margin-left: 8rem;
+}
+.secondpage p{
+    position: absolute;
+    width: 600px;
+    font-size: 1.6rem;
+    margin-left: 45rem;
+    margin-top: 20rem;
+    color: white;
+
+}
+.autoplay{
+    width: 320px;
+    height: 105px;
+    background-color:black;
+    border: white solid 1px;
+    border-radius: 1.2rem;
+    position: absolute;
+    top: 108rem;
+    margin-left: 16.8rem ;
+}
+.autoplay img{
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    right: 15rem;
+    margin-top: 0.5rem;
+
+}
+.autoplay h4{
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+#Download{
+    position: absolute;
+    width: 50px;
+    color: rgb(30, 159, 239);
+    right: 11rem;
+    margin-top:-15px;
+    font-size: 1rem;
+
+}
+/* div */
+#gif{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0,0,0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+    left: 16rem;
+    top: 30px;
+}
+.thirdpage{
+  width: 100vw;
+  height:600px;
+  background-color:black;
+}
+.thirdpage h1{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    font-size: 3rem;
+    margin-left: 8rem;
+    margin-top: 12rem;
+    color: white;
+}
+.thirdpage p{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  font-size: 1.5rem;
+  margin-left: 8rem;
+  margin-top: 16rem;
+  color: white;
+
+}
+#clip{
+  position: absolute;
+  width: 380px;
+  height: 210px;
+  margin-top: 10rem;
+  margin-left: 52rem;
+  
+}
+.thirdpage img{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  /* font-size: 1.5rem; */
+  margin-left: 45rem;
+  margin-top: 8rem;
+
+}
+
+.fourpage{
+  width: 100vw;
+  height:600px;
+  background-color:black;
+}
+.fourpage h1{
+  position: absolute;
+    width: 600px;
+    height: 400px;
+    font-size: 3.2rem;
+    margin-left: 45rem;
+    margin-top: 12rem;
+    color: white;
+}
+.fourpage p{
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  font-size: 1.5rem;
+  margin-left: 45rem;
+  margin-top: 16rem;
+  color: white;
+}
+.fourpage img{
+  width: 600px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.fivepage{
+  width: 100vw;
+  height:800px;
+  background-color:black;
+}
+.fivepage h1{
+  position: absolute;
+    width: 700px;
+    height: 400px;
+    font-size: 3.1rem;
+    margin-left: 25rem;
+    margin-top: 3rem;
+    color: white;
+}
+.fivepage ul{
+  position: absolute;
+  list-style: none;
+  margin-top: 8rem;
+  margin-left: 12rem;
+  font-size: 1.6rem;
+}
+.fivepage ul li{
+  background-color: rgb(48, 46, 46);
+  width: 1050px;
+  height: 80px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+}
+/* div */
+#accordionExample{
+  position: absolute;
+  margin-top: 8rem;
+  width: 900px;
+  height: 200px;
+  margin-left: 15rem;
+
+}
+.fivepage h3{
+  font-size: 1.3rem;
+  margin-top: 2.8rem;
+  margin-left: 8rem;
+
+}
+#btn button{
+  position: absolute;
+  width: 180px;
+  padding: 15px 25px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 2rem;
+  align-items: center;
+}
+#btn form{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn input {
+  margin-left: 10rem;
+  color: white;
+  padding: 15px 20px;
+  width: 50%;
+  border: 1px solid gray;
+  background: transparent;
+}
+
+#btn input::placeholder {
+  color: lightgray;
+}
+.sixpage{
+  width: 100vw;
+  height:600px;
+  background-color:black;
+}
+.sixpage h4 {
+  display: flex;
+  width: 500px;
+  margin-left: 5rem;
+}
+.sixpage p{
+  text-decoration:underline;
+  margin-left: 5px;
+}
+.flex ul{   
+  margin-top: 2rem;
+  margin-left: 3rem;
+  /* display: block; */
+}
+.flex ul li{
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.flex ul select{
+    height: 1.7rem;
+    width: 7rem;
+    outline: none;
+    background-color: white;
+    color:black;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+}
+.flex ul li select option {
+  color: black;
+  background-color: white;
+}
+.flex2 ul{
+  position: absolute;
+  margin-left: 25rem;
+  top: 264rem;
+  
+
+}
+.flex2 ul li{
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.flex3 ul{
+  position: absolute;
+  margin-left: 50rem;
+  top: 264rem;
+
+}
+.flex3 ul li{
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.flex4 ul{
+  position: absolute;
+  margin-left: 75rem;
+  top: 264rem;
+
+}
+.flex4 ul li{
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#india{
+  text-decoration: none;
+
+}
